@@ -1,0 +1,23 @@
+spring.cloud.stream:
+  function:
+    definition: processor
+  bindings:
+    processor-in-0:
+      destination: job-posting
+    processor-out-0:
+      destination: hiring
+  kafka:
+    bindings:
+      processor-in-0:
+        consumer:
+          configuration:
+            value:
+              deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      processor-out-0:
+        consumer:
+          configuration:
+            value:
+              serializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    binder:
+      brokers:
+        - localhost:9092

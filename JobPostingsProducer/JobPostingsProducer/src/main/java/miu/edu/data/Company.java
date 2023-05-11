@@ -1,0 +1,75 @@
+package miu.edu.data;
+
+import java.util.List;
+import java.util.Random;
+
+public class Company {
+    private static final List<String> COMPANIES = List.of(
+            "Acme Corporation",
+            "Big Data Inc.",
+            "Data Solutions LLC",
+            "Machine Learning Co.",
+            "Analytics Ltd.",
+            "Microsoft",
+            "Apple",
+            "Amazon",
+            "Facebook",
+            "Google",
+            "IBM",
+            "Intel",
+            "Oracle",
+            "Cisco",
+            "HP",
+            "Dell",
+            "VMware",
+            "Salesforce",
+            "Adobe",
+            "Samsung",
+            "Qualcomm",
+            "Broadcom",
+            "Nvidia",
+            "AMD",
+            "Micron",
+            "Micron Technology",
+            "Texas Instruments",
+            "Sony",
+            "LG",
+            "Panasonic",
+            "Nokia",
+            "Ericsson",
+            "Siemens",
+            "ABB",
+            "Honeywell",
+            "Schneider Electric",
+            "Rockwell Automation",
+            "Emerson Electric",
+            "Hitachi",
+            "Toshiba",
+            "NEC",
+            "Fujitsu",
+            "Accenture",
+            "Infosys",
+            "TCS",
+            "Capgemini",
+            "Wipro",
+            "Cognizant",
+            "DXC Technology",
+            "HCL Technologies",
+            "Mindtree",
+            "Persistent Systems",
+            "DataWorks",
+            "Insight Analytics",
+            "Precision Data",
+            "Smart Insights Co.",
+            "Quantum Data Analytics",
+            "InfoVision Inc.",
+            "Proven Data Solutions",
+            "Bright Data Analytics",
+            "Neural Analytics Corp.",
+            "Optimal Intelligence Ltd."
+    );
+
+    public static String name() {
+        return COMPANIES.get(new Random().nextInt(COMPANIES.size()));
+    }
+}
