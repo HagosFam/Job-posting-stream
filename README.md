@@ -15,7 +15,8 @@ This is a simple system created to demonstrate how messaging, data processing an
 * Spring kafka streams
 * Angular
 
-![Architecture]
+Architecture ( Using C4 model )
+![Job posting architecture](https://github.com/HagosFam/Job-posting-stream/assets/41420437/1b20a039-18d5-4ff0-b46c-30028fd819ae)
 
-https://user-images.githubusercontent.com/41420437/237792524-d4866b46-9892-43eb-b91c-871613a565dd.png
+
 
